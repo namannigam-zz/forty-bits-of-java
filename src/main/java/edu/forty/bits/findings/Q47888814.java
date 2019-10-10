@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.findings;
+package edu.forty.bits.findings;
 
 import java.util.Arrays;
 

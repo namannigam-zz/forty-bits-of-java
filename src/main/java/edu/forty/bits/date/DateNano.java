@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.date;
+package edu.forty.bits.date;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

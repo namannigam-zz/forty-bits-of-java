@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.g1gc;
+package edu.forty.bits.g1gc;
 
 import java.util.ArrayList;
 import java.util.Collections;

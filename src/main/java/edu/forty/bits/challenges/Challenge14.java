@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.jdk09.challenges;
+package edu.forty.bits.jdk09.challenges;
 
 import java.lang.module.ModuleFinder;
 import java.lang.module.ModuleReference;

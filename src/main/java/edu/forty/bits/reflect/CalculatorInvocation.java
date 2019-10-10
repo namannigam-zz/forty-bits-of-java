@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.reflection;
+package edu.forty.bits.reflection;
 
 import java.lang.invoke.MethodHandles;
 import java.lang.reflect.InvocationHandler;

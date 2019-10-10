@@ -1,11 +1,15 @@
-package com.stackoverflow.nullpointer.stream;
+package edu.forty.bits.functional;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-public class CustomCollector {
+public class CustomCollectorImpl {
 
     public static void main(String[] args) {
         Map<String, List<String>> persons = new HashMap<>();
@@ -43,7 +47,7 @@ public class CustomCollector {
 
         List<List<Double>> xDatas = new ArrayList<>();
         List<List<Double>> yDatas = new ArrayList<>();
-        newList.forEach((k,v) -> {
+        newList.forEach((k, v) -> {
             xDatas.add(v.stream()
                     .map(Coordinates::getX)
                     .collect(Collectors.toCollection(LinkedList::new)));
@@ -76,6 +80,7 @@ public class CustomCollector {
         class Acc {
             private Offer min = null;
             private List<Offer> result = new ArrayList<>();
+
             private void add(Offer offer) {
                 if (offer.getType() == OfferType.STANDARD) {
                     if (min == null) {
@@ -112,12 +117,15 @@ public class CustomCollector {
         String name;
         Double x;
         Double y;
+
         Double getX() {
             return x;
         }
+
         Double getY() {
             return y;
         }
+
         String getName() {
             return name;
         }

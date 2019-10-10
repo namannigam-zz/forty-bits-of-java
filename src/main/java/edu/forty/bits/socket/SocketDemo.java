@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.socket;
+package edu.forty.bits.socket;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;

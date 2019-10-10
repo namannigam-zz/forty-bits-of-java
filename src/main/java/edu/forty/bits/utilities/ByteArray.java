@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.utilities;
+package edu.forty.bits.utilities;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

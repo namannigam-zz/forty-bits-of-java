@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.functional;
+package edu.forty.bits.functional;
 
 import java.util.stream.IntStream;
 import java.util.stream.Stream;

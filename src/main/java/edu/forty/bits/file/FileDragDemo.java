@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.file;
+package edu.forty.bits.file;
 
 import javax.swing.*;
 import java.awt.datatransfer.DataFlavor;

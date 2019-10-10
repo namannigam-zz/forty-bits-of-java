@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.http;
+package edu.forty.bits.http;
 
 import java.io.IOException;
 import java.net.Authenticator;

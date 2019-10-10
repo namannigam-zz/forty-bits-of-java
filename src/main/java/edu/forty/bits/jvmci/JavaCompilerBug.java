@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.jvmci;
+package edu.forty.bits.jvmci;
 
 import java.util.ArrayList;
 import java.util.Arrays;

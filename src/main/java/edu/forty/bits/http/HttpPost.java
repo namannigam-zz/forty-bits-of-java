@@ -1,12 +1,11 @@
-package com.stackoverflow.nullpointer.http;
-
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
+package edu.forty.bits.http;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.nio.file.Paths;
 
 public class HttpPost {
@@ -16,7 +15,7 @@ public class HttpPost {
         // Request builder
         URI uri = null;
         uri = new URI("https://ads.line.me/api/v1.0/authority_delegations/get");
-        HttpRequest.BodyProcessor bodyProcessor = HttpRequest.BodyProcessor.fromString("{\"operands\":[]}");
+        HttpRequest.BodyPublisher bodyProcessor = HttpRequest.BodyPublishers.ofString("{\"operands\":[]}");
         HttpRequest request = HttpRequest.newBuilder().uri(uri)
                 .header("Content-Type", "application/json")
                 .header("Authorization", "Bearer 1djCb/mXV+KtryMxr6i1bXw")
@@ -29,8 +28,8 @@ public class HttpPost {
         // Response builder
         HttpResponse response = null;
 
-        HttpResponse.BodyHandler bodyHandler = HttpResponse.BodyHandler.asFile(Paths.get("/path"));
-        response = httpClient.send(request, HttpResponse.BodyHandler.asString());
+        HttpResponse.BodyHandler bodyHandler = HttpResponse.BodyHandlers.ofFile(Paths.get("/path"));
+        response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
 
 
         System.out.println("StatusCode = " + response.statusCode());

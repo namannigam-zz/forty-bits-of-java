@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.concurrency;
+package edu.forty.bits.concurrency;
 
 import java.util.ArrayList;
 import java.util.List;

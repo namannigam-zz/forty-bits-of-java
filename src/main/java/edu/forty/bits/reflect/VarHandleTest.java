@@ -1,6 +1,6 @@
-package com.stackoverflow.nullpointer.reflect;
+package edu.forty.bits.reflect;
 
-import com.stackoverflow.nullpointer.interfaces.Question;
+import edu.forty.bits.interfaces.Question;
 
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles;

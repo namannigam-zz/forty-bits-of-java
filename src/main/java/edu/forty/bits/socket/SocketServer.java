@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.socket;
+package edu.forty.bits.socket;
 
 import java.net.URI;
 import java.net.http.HttpClient;

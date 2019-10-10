@@ -1,9 +1,8 @@
-package com.stackoverflow.nullpointer.http;
-
-import jdk.incubator.http.HttpRequest;
+package edu.forty.bits.http;
 
 import java.io.FileNotFoundException;
 import java.net.URI;
+import java.net.http.HttpRequest;
 import java.nio.file.Paths;
 import java.time.Duration;
 
@@ -15,7 +14,7 @@ public class HttpRequestBuilder {
                 .timeout(Duration.ofMinutes(1))
                 .header("Content-Type", "application/json")
                 .header("Content-Type", "application/json")
-                .POST(HttpRequest.BodyProcessor.fromFile(Paths.get("file.json")))
+                .POST(HttpRequest.BodyPublishers.ofFile(Paths.get("file.json")))
                 .build();
     }
 }

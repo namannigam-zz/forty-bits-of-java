@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.lvti;
+package edu.forty.bits.lvti;
 
 interface ITest2 {
     String strOp(String x);

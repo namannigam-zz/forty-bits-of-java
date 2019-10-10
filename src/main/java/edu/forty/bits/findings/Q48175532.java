@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.findings;
+package edu.forty.bits.findings;
 
 /**
  * @link <href>https://stackoverflow.com/questions/48175532</href>

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.function;
+package edu.forty.bits.function;
 
 import java.util.function.Function;
 

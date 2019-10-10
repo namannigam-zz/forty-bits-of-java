@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.inheritence;
+package edu.forty.bits.inheritence;
 
 public class ConsumeConsAB {
 

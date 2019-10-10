@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.expression;
+package edu.forty.bits.expression;
 
 import java.util.Scanner;
 
@@ -12,14 +12,14 @@ public class SwitchExpressionExtendedBreak {
          * After JEP-325
          */
         int j = switch (day) {
-            case MONDAY -> 0 ;
-            case TUESDAY -> 1 ;
-            default ->{
+            case MONDAY -> 0;
+            case TUESDAY -> 1;
+            default -> {
                 int k = day.toString().length();
                 int result = f(k);
-                break result;
+                yield result;
             }
-        } ;
+        };
         System.out.println("j = " + j);
 
     }

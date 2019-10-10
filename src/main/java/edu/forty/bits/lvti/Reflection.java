@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.lvti;
+package edu.forty.bits.lvti;
 
 public class Reflection {
 

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.stream;
+package edu.forty.bits.functional;
 
 import java.util.function.Supplier;
 
@@ -7,7 +7,7 @@ public class SimpleKeySupplier implements Supplier<String> {
     private final int numToGenerate;
     private int numGenerated;
 
-    SimpleKeySupplier(String keyPrefix, int numRecs) {
+    public SimpleKeySupplier(String keyPrefix, int numRecs) {
         this.keyPrefix = keyPrefix;
         numToGenerate = numRecs;
         numGenerated = 0;

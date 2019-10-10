@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer;
+package edu.forty.bits;
 
 public class ReferenceVariableCaptured {
     public static void main(String[] args) {

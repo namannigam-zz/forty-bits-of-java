@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.stream;
+package edu.forty.bits.stream;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

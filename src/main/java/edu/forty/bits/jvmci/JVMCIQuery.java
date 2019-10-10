@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.jvmci;
+package edu.forty.bits.jvmci;
 
 import com.sun.management.HotSpotDiagnosticMXBean;
 import com.sun.management.VMOption;

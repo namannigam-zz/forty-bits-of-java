@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.functional;
+package edu.forty.bits.functional;
 
 @FunctionalInterface
 public interface NAryFunction<T, R> {

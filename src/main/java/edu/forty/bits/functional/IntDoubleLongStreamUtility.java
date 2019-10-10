@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.stream;
+package edu.forty.bits.stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;

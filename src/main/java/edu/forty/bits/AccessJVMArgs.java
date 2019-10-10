@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer;
+package edu.forty.bits;
 
 import sun.misc.Unsafe;
 

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.expression;
+package edu.forty.bits.expression;
 
 import java.util.Scanner;
 
@@ -23,9 +23,9 @@ public class SwitchExpressionsNoFallThrough {
          * After JEP-325
          */
         switch (value) {
-            case 1 ->System.out.println("one");
-            case 2 ->System.out.println("two");
-            default ->System.out.println("many");
+            case 1 -> System.out.println("one");
+            case 2 -> System.out.println("two");
+            default -> System.out.println("many");
         }
     }
 }

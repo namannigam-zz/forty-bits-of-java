@@ -11,15 +11,12 @@ module forty.bits.of.java {
 
     requires lombok;
 
-    requires org.apache.commons.lang3;
-    requires com.fasterxml.jackson.core;
-    requires com.fasterxml.jackson.databind;
-    requires com.google.common;
-    requires com.google.guice;
-    requires jsr305;
-    requires mongo.java.driver;
-    requires json.simple;
-
-    opens edu.forty.bits.netw to com.google.guice;
-
+//    requires org.apache.commons.lang3;
+//    requires com.fasterxml.jackson.core;
+//    requires com.fasterxml.jackson.databind;
+//    requires com.google.common;
+//    requires com.google.guice;
+//    requires jsr305;
+//    requires mongo.java.driver;
+//    requires json.simple;
 }

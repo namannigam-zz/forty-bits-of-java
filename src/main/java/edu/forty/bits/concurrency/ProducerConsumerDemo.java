@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.concurrency;
+package edu.forty.bits.concurrency;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;

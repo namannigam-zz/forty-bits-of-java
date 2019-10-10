@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.patternmatch;
+package edu.forty.bits.patternmatch;
 
 public class CastingIdiom {
 

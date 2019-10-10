@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.observable;
+package edu.forty.bits.observable;
 
 /**
  * Created by naman.nigam on 28/09/15.

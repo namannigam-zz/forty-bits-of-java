@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.time;
+package edu.forty.bits.time;
 
 import java.time.Duration;
 import java.time.Instant;

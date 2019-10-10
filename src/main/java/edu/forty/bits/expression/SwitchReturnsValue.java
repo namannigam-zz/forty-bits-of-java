@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.expression;
+package edu.forty.bits.expression;
 
 import java.util.Scanner;
 

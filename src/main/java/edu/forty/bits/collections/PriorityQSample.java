@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.collections;
+package edu.forty.bits.collections;
 
 import java.util.PriorityQueue;
 

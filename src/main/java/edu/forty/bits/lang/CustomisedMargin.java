@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.lang;
+package edu.forty.bits.lang;
 
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -7,7 +7,7 @@ public class CustomisedMargin {
 
     private static final String MARKER = "| ";
 
-    private static String stripMargin(String com.stackoverflow.nullpointer.string) {
+    private static String stripMargin(String string) {
         return string.lines().map(String::strip)
                 .map(s -> s.startsWith(MARKER) ? s.substring(MARKER.length()) : s)
                 .collect(Collectors.joining("\n", "", "\n"));
@@ -19,11 +19,12 @@ public class CustomisedMargin {
     }
 
     public static void main(String[] args) {
-        String stripped = `
-                          | The content of
-                          | the string
-                      `;
-        ;
+//        String stripped = `
+//                          | The content of
+//                          | the string
+//                      `;
+
+        String stripped = "temporary";
         System.out.print(transform(stripped, CustomisedMargin::stripMargin));
 
         //    Output:

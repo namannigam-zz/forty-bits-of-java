@@ -1,7 +1,8 @@
-package com.stackoverflow.nullpointer.lang;
+package edu.forty.bits.lang;
 
 public class PolyglotRawStrings {
 
+    // TODO : check with intelliJ update
     public static void main(String[] args) {
         // Before JEP-326
         String script = "function hello() {\n" +
@@ -14,12 +15,12 @@ public class PolyglotRawStrings {
 
 
         // After JEP-326
-        String scriptNow = `function hello() {
-                    print('"Hello World"');
-                 }
-
-                 hello();
-                `;
+//        String scriptNow = `function hello() {
+//                    print('"Hello World"');
+//                 }
+//
+//                 hello();
+//                `;
 
 //        ScriptEngine engine = new ScriptEngineManager().getEngineByName("js");
 //        Object obj = engine.eval(script);

@@ -1,6 +1,6 @@
 package edu.forty.bits;
 
-import java.awt.image.SampleModel;
+
 import java.util.Objects;
 
 /**
@@ -9,8 +9,8 @@ import java.util.Objects;
 public class DeepEquals {
 
     public static void main(String[] args) {
-        SampleModel sampleModel1 = new SampleModel();
-        SampleModel sampleModel2 = new SampleModel();
+        edu.forty.bits.Objects.Person sampleModel1 = new edu.forty.bits.Objects.Person("naman");
+        edu.forty.bits.Objects.Person sampleModel2 = new edu.forty.bits.Objects.Person("nmn");
         System.out.println(Objects.deepEquals(sampleModel1,sampleModel2));
     }
 }

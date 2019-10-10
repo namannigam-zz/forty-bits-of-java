@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.utilities;
+package edu.forty.bits.utilities;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.jdk09.challenges;
+package edu.forty.bits.jdk09.challenges;
 
 import java.util.List;
 import java.util.stream.IntStream;

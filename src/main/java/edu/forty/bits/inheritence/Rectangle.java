@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.inheritence;
+package edu.forty.bits.inheritence;
 
 import java.io.BufferedReader;
 import java.io.IOException;

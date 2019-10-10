@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.expression;
+package edu.forty.bits.expression;
 
 import java.util.Scanner;
 
@@ -12,12 +12,12 @@ public class SwitchExpressionWithFallThrough {
          */
         int result = switch (s) {
             case "Foo":
-                break 1;
+                yield 1;
             case "Bar":
-                break 2;
+                yield 2;
             default:
                 System.out.println("Neither Foo nor Bar, hmmm...");
-                break 0;
+                yield 0;
         };
     }
 }

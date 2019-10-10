@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.functional;
+package edu.forty.bits.functional;
 
 import java.math.BigDecimal;
 import java.util.HashMap;

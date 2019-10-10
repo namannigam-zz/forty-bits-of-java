@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.optional;
+package edu.forty.bits.optional;
 
 import java.util.Comparator;
 import java.util.Optional;

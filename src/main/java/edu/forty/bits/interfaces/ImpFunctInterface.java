@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.interfaces;
+package edu.forty.bits.interfaces;
 
 class ImpFunctInterface {
     private interface FunctionalInterface {

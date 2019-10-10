@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.lang;
+package edu.forty.bits.lang;
 
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.MethodType;

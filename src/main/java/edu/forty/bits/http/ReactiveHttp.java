@@ -1,7 +1,6 @@
-package com.stackoverflow.nullpointer.http;
+package edu.forty.bits.http;
 
-import jdk.incubator.http.HttpHeaders;
-
+import java.net.http.HttpHeaders;
 import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.concurrent.Flow;

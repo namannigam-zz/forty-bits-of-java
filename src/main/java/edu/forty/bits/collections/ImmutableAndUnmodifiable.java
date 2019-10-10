@@ -1,6 +1,6 @@
-package com.stackoverflow.nullpointer.collections;
+package edu.forty.bits.collections;
 
-import com.stackoverflow.nullpointer.pojo.Person;
+import edu.forty.bits.Objects;
 
 import java.util.Collections;
 import java.util.List;
@@ -11,20 +11,20 @@ public class ImmutableAndUnmodifiable {
 
     public static void main(String[] args) {
 
-        List<Person> persons = Stream.of(new Person("stackoverflow")).collect(Collectors.toList());
-        List<Person> unmodifiableList = List.copyOf(persons);
-        List<Person> immutableList = persons.stream()
+        List<Objects.Person> persons = Stream.of(new Objects.Person("stackoverflow")).collect(Collectors.toList());
+        List<Objects.Person> unmodifiableList = List.copyOf(persons);
+        List<Objects.Person> immutableList = persons.stream()
                 .collect(Collectors.collectingAndThen(Collectors.toList(), Collections::unmodifiableList));
         System.out.println(persons + "" + persons.size());
         System.out.println(unmodifiableList + "" + unmodifiableList.size());
         System.out.println(immutableList + "" + immutableList.size());
 
-        persons.add(new Person("com/stackoverflow/nullpointer"));
+        persons.add(new Objects.Person("com/stackoverflow/nullpointer"));
         System.out.println(persons + "" + persons.size());
         System.out.println(unmodifiableList + "" + unmodifiableList.size());
         System.out.println(immutableList + "" + immutableList.size());
 
-        immutableList.add(new Person("nmn"));
-        unmodifiableList.add(new Person("nmn"));
+        immutableList.add(new Objects.Person("nmn"));
+        unmodifiableList.add(new Objects.Person("nmn"));
     }
 }

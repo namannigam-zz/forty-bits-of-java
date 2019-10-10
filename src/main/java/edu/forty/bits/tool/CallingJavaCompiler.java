@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.tool;
+package edu.forty.bits.tool;
 
 import javax.tools.JavaCompiler;
 import javax.tools.ToolProvider;

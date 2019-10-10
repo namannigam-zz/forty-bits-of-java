@@ -1,12 +1,11 @@
-package com.stackoverflow.nullpointer.http;
-
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
+package edu.forty.bits.http;
 
 import java.net.InetSocketAddress;
 import java.net.ProxySelector;
 import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.time.Duration;
 
 public class Q49880099 {
@@ -26,10 +25,10 @@ public class Q49880099 {
                 .header("Accept", "application/json")
                 .header("Content-Type", "application/json")
                 .timeout(Duration.ofHours(2))
-                .POST(HttpRequest.BodyPublisher.fromString(json.toString()))
+                .POST(HttpRequest.BodyPublishers.ofString(json.toString()))
                 .build();
 
-        HttpResponse<String> httpResponse = client.send(httpRequest, HttpResponse.BodyHandler.asString());
+        HttpResponse<String> httpResponse = client.send(httpRequest, HttpResponse.BodyHandlers.ofString());
         String jsonResponse = httpResponse.body();
 
         return new JSONObject(jsonResponse);

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.exception;
+package edu.forty.bits.exception;
 
 import java.util.List;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.expression;
+package edu.forty.bits.expression;
 
 import java.util.Scanner;
 
@@ -12,14 +12,14 @@ public class SwitchExpressionRestrictsJump {
         for (int i = 0; i < MAX_VALUE; ++i) {
             int k = switch (e) {
                 case 0:
-                    break 1;
+                    yield 1;
                 case 1:
-                    break 2;
+                    yield 2;
                 default:
 //                     continue;
-                    break 0;
-                // ERROR! Illegal jump through a switch com.stackoverflow.nullpointer.expression
-            } ;
+                    yield 0;
+                    // ERROR! Illegal jump through a switch com.stackoverflow.nullpointer.expression
+            };
         }
     }
 }

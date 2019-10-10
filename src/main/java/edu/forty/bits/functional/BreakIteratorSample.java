@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.functional;
+package edu.forty.bits.functional;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

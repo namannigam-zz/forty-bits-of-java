@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.date;
+package edu.forty.bits.date;
 
 import java.time.OffsetDateTime;
 import java.time.ZoneId;

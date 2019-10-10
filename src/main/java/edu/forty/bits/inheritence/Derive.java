@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.inheritence;
+package edu.forty.bits.inheritence;
 
 class Derive extends Base {
     public String getName() { //Not compiling

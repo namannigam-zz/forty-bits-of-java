@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.clazz;
+package edu.forty.bits.clazz;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.socket;
+package edu.forty.bits.socket;
 
 import java.io.FilterOutputStream;
 import java.io.IOException;

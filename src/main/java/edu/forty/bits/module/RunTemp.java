@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.module;
+package edu.forty.bits.module;
 
 import java.util.Arrays;
 import java.util.List;

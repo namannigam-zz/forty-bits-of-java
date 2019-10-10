@@ -1,12 +1,11 @@
-package com.stackoverflow.nullpointer.http;
-
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
+package edu.forty.bits.http;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 
 public class HttpGet {
@@ -22,7 +21,7 @@ public class HttpGet {
         System.out.println(httpClient.version());
 
 //        Response builder
-        HttpResponse response = httpClient.send(request, HttpResponse.BodyHandler.asString());
+        HttpResponse response = httpClient.send(request,HttpResponse.BodyHandlers.ofString());
 
         int statusCode = response.statusCode();
         String responseBody = response.body().toString();

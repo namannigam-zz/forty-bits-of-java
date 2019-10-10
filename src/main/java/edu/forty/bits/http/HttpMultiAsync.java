@@ -1,12 +1,10 @@
-package com.stackoverflow.nullpointer.http;
-
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
-import jdk.incubator.http.MultiMapResult;
+package edu.forty.bits.http;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
@@ -41,29 +39,27 @@ public class HttpMultiAsync {
         HttpRequest request = HttpRequest.newBuilder(uri).version(HttpClient.Version.HTTP_2).GET().build();
         HttpClient client = HttpClient.newBuilder().version(HttpClient.Version.HTTP_2).build();
 
-        CompletableFuture<MultiMapResult<String>> sendAsync = client
-                .sendAsync(request, HttpResponse.MultiProcessor.asMap((req) -> {
-                    Optional<HttpResponse.BodyHandler<String>> optional =
-                            Optional.of(HttpResponse.BodyHandler.asString());
-                    String msg = " - " + req.uri();
-                    LOG.log(Level.INFO, msg);
-                    return optional;
-                }))
-                .orTimeout(30, TimeUnit.SECONDS);
-
-        Map<HttpRequest, CompletableFuture<HttpResponse<String>>>
-                multiMapResult = sendAsync
-                .join();
-        LOG.log(Level.INFO,
-                "multiMapResult: " + multiMapResult.entrySet().size());
-
-        for (HttpRequest key : multiMapResult.keySet()) {
-            CompletableFuture<HttpResponse<String>> completableFuture =
-                    multiMapResult
-                            .get(key);
-            HttpResponse<String> response = completableFuture.get();
-            System.out.println(response);
-        }
+        // TODO : validate later for multi async
+//        CompletableFuture<MultiMapResult<String>> sendAsync = client
+//                .sendAsync(request, HttpResponse.MultiProcessor.asMap((req) -> {
+//                    Optional<HttpResponse.BodyHandler<String>> optional =
+//                            Optional.of(HttpResponse.BodyHandler.asString());
+//                    String msg = " - " + req.uri();
+//                    LOG.log(Level.INFO, msg);
+//                    return optional;
+//                }))
+//                .orTimeout(30, TimeUnit.SECONDS);
+//
+//        Map<HttpRequest, CompletableFuture<HttpResponse<String>>> multiMapResult = sendAsync.join();
+//        LOG.log(Level.INFO, "multiMapResult: " + multiMapResult.entrySet().size());
+//
+//        for (HttpRequest key : multiMapResult.keySet()) {
+//            CompletableFuture<HttpResponse<String>> completableFuture =
+//                    multiMapResult
+//                            .get(key);
+//            HttpResponse<String> response = completableFuture.get();
+//            System.out.println(response);
+//        }
         System.exit(0);
     }
 }

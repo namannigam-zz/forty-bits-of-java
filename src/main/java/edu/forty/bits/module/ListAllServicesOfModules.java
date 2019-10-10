@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.module;
+package edu.forty.bits.module;
 
 public class ListAllServicesOfModules {
     public static void main(String[] args) {

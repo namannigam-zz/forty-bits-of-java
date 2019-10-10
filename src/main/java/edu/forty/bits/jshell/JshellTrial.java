@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.jshell;
+package edu.forty.bits.jshell;
 
 import jdk.jshell.tool.JavaShellToolBuilder;
 

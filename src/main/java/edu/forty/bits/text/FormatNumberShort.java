@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.text;
+package edu.forty.bits.text;
 
 import java.text.NumberFormat;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer;
+package edu.forty.bits;
 
 import java.util.EmptyStackException;
 public class CustomStackImpl<T> {

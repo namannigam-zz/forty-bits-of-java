@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.file;
+package edu.forty.bits.file;
 
 import java.io.IOException;
 import java.nio.file.Files;

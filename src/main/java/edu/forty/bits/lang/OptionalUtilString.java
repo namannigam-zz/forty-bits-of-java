@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.lang;
+package edu.forty.bits.lang;
 
 import java.util.Optional;
 

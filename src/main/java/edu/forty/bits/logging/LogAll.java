@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.logging;
+package edu.forty.bits.logging;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

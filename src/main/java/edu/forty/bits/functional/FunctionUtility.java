@@ -1,6 +1,4 @@
-package com.stackoverflow.nullpointer.function;
-
-import com.stackoverflow.nullpointer.pojo.XYZProfile;
+package edu.forty.bits.functional;
 
 import java.util.Arrays;
 import java.util.List;
@@ -20,14 +18,14 @@ public class FunctionUtility {
 
 
         // biFunction on custom object
-        BiFunction<String, Integer, XYZProfile> xyzProfileBiFunction = (string, integer) -> {
-            XYZProfile xyzProfile = new XYZProfile(string, integer);
+        BiFunction<String, Integer, edu.forty.bits.Objects.XYZProfile> xyzProfileBiFunction = (string, integer) -> {
+            edu.forty.bits.Objects.XYZProfile xyzProfile = new edu.forty.bits.Objects.XYZProfile(string, integer);
             // modify xyZProfile
             System.out.println(xyzProfile);
             return xyzProfile;
         };
-        XYZProfile xyzProfile1 = xyzProfileBiFunction.apply("com/stackoverflow/nullpointer", 0);
-        XYZProfile xyzProfile2 = xyzProfileBiFunction.apply("holger", 1);
+        edu.forty.bits.Objects.XYZProfile xyzProfile1 = xyzProfileBiFunction.apply("com/stackoverflow/nullpointer", 0);
+        edu.forty.bits.Objects.XYZProfile xyzProfile2 = xyzProfileBiFunction.apply("holger", 1);
         System.out.println(xyzProfile1 + "" + xyzProfile2);
 
         // function chain
@@ -44,8 +42,7 @@ public class FunctionUtility {
         System.out.println(nonEmptyStringPredicate.test("any"));
 
 
-        Functional<String, Number> functional = (string) -> {
-        };
+        edu.forty.bits.function.Functional<String, Number> functional = (string) -> { };
         functional.method("com.stackoverflow.nullpointer.string", (string) -> 1);
 
         List<String> list = Arrays.asList("Abcd", "Abcd");

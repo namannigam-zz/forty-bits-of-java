@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.server;
+package edu.forty.bits.server;
 
 import java.io.IOException;
 import java.io.InputStream;

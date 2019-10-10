@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.inheritence;
+package edu.forty.bits.inheritence;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.functional;
+package edu.forty.bits.functional;
 
 class SeaPlane extends Vehicle implements FastFly, Sail {
     public void cruise() {

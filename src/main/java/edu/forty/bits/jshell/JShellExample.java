@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.jshell;
+package edu.forty.bits.jshell;
 
 import java.util.List;
 

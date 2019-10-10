@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.gc;
+package edu.forty.bits.gc;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.Reference;

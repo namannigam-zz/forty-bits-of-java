@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.lang;
+package edu.forty.bits.lang;
 
 public class Compare {
 

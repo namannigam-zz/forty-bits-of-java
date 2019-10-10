@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer;
+package edu.forty.bits;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,27 +19,27 @@ public class Objects {
 
     @Getter
     @AllArgsConstructor
-    public class Author {
+    public static class Author {
         String lastName;
         int age;
     }
 
     @Getter
     @AllArgsConstructor
-    public class Book {
+    public static class Book {
         Author author;
     }
 
     @Getter
     @AllArgsConstructor
-    public class CarShop {
+    public static class CarShop {
         private String carName;
         private int cost;
         private Set<String> colors;
     }
 
     @Getter
-    public class Employee extends Person {
+    public static class Employee extends Person {
         public Employee(String name) {
             super(name);
         }
@@ -47,19 +47,18 @@ public class Objects {
         private int id;
         private int salary;
         private List<Employee> subordinates;
-        Address address;
         Department department;
         String gender;
     }
 
     @Getter
-    public class Department {
+    public static class Department {
     }
 
 
     @Getter
     @Setter
-    public class Person {
+    public static class Person {
         String name;
         LocalDateTime date;
         boolean attend;
@@ -75,41 +74,41 @@ public class Objects {
 
     @Getter
     @AllArgsConstructor
-    public class EmployeeContract {
+    public static class EmployeeContract {
         private Long id;
         private Date date;
     }
 
     @Getter
-    public class LineItem {
+    public static class LineItem {
     }
 
     @Getter
     @AllArgsConstructor
-    public class MyDTO {
+    public static class MyDTO {
         private int amount;
     }
 
     @Getter
     @AllArgsConstructor
-    public class Node {
+    public static class Node {
         int degree;
     }
 
     @Getter
     @AllArgsConstructor
-    public class Order {
+    public static class Order {
         String customerName;
         List<LineItem> lineItems;
     }
 
     @Getter
-    class Permission {
+    public static class Permission {
         String label;
     }
 
     @Getter
-    public class ProductCatalogue {
+    public static class ProductCatalogue {
         private Integer pId;
         private Integer cId;
     }
@@ -125,7 +124,7 @@ public class Objects {
     }
 
     @Getter
-    public class Stake {
+    public static class Stake {
         int customerId;
         int betOfferId;
         int stake;
@@ -162,14 +161,14 @@ public class Objects {
 
     @Getter
     @Setter
-    public class Subject {
+    public static class Subject {
         String name;
         Integer marks;
         boolean optional;
     }
 
     @Getter
-    public class XYZProfile {
+    public static class XYZProfile {
         private String name;
         private Integer code;
 
@@ -181,7 +180,7 @@ public class Objects {
 
     @Getter
     @AllArgsConstructor
-    public class User {
+    public static class User {
         private String name;
         private String id;
         private String email;
@@ -201,7 +200,7 @@ public class Objects {
     }
 
     @Getter
-    public class Unicorn {
+    public static class Unicorn {
         private List<Rider> riders;
     }
 }

@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.process;
+package edu.forty.bits.process;
 
 import java.lang.management.ManagementFactory;
 import java.lang.reflect.InvocationTargetException;

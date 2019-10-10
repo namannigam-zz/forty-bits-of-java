@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.http;
+package edu.forty.bits.http;
 
 public class JSONObject {
     public JSONObject(String jsonResponse) {

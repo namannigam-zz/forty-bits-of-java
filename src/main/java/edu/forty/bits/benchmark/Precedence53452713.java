@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.benchmark;
+package edu.forty.bits.benchmark;
 
 public class Precedence53452713 {
 

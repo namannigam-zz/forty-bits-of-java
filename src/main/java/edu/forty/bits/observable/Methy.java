@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.observable;
+package edu.forty.bits.observable;
 
 import java.util.Observable;
 import java.util.Observer;

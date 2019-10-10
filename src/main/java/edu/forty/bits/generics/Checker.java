@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.generics;
+package edu.forty.bits.generics;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

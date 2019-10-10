@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.intrface;
+package edu.forty.bits.intrface;
 
 public class SubIntImpl implements SubInt {
     @Override

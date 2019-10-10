@@ -1,16 +1,17 @@
-package com.stackoverflow.nullpointer.http;
+package edu.forty.bits.http;
 
-import jdk.incubator.http.HttpClient;
-import jdk.incubator.http.HttpRequest;
-import jdk.incubator.http.HttpResponse;
 
-public class AsyncHttp {
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
-    AsyncHttp() {
+public class AsynchronousHttp {
+
+    AsynchronousHttp() {
         HttpClient httpClient = HttpClient.newBuilder().build();
         HttpRequest httpRequest = HttpRequest.newBuilder().build();
 
-        httpClient.sendAsync(httpRequest, HttpResponse.BodyHandler.asString())
+        httpClient.sendAsync(httpRequest, r -> null)
                 .thenApply(response -> {
                     System.out.println(response.statusCode());
                     return response;

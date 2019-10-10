@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.interfaces;
+package edu.forty.bits.interfaces;
 
 public interface DefaultFromParentInterface extends Another<Invoice> {
     // some other methods here

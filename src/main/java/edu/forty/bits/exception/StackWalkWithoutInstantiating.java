@@ -1,4 +1,4 @@
-package com.stackoverflow.nullpointer.exception;
+package edu.forty.bits.exception;
 
 import java.lang.StackWalker.StackFrame;
 
