@@ -1,9 +1,9 @@
-package edu.forty.bits.jdk09.challenges;
+package edu.forty.bits.functional;
 
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
-public class Challenge16 {
+public class PatternBasedStringConcatenation {
 
     public static void main(String[] args) {
         Function<String, String> con = Util::concat;

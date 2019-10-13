@@ -1,9 +1,9 @@
-package edu.forty.bits.jdk09.challenges;
+package edu.forty.bits.challenges;
 
 import java.io.Closeable;
 import java.io.IOException;
 
-public class Challenge2 {
+public class CloseableInTryWithResource {
 
     public static void main(String[] args) {
         String soprano = null;

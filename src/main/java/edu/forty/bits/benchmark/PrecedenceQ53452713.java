@@ -1,6 +1,6 @@
 package edu.forty.bits.benchmark;
 
-public class Precedence53452713 {
+public class PrecedenceQ53452713 {
 
     public static void main(String[] args) {
         long startTime = System.nanoTime();

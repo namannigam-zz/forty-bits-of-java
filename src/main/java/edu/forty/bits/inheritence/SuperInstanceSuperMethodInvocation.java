@@ -1,15 +1,15 @@
-package edu.forty.bits.jdk09.challenges;
+package edu.forty.bits.inheritence;
 
-public class Challenge17 {
+public class SuperInstanceSuperMethodInvocation {
 
-    static  class Jedi {
-        static void attack(){
+    static class Jedi {
+        static void attack() {
             System.out.println("Jedi's attack.");
         }
     }
 
     static class Luke extends Jedi {
-        static void atttack() {
+        static void attack() {
             System.out.println("Luke's attack.");
         }
     }

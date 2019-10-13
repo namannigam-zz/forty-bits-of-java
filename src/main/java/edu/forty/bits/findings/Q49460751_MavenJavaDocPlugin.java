@@ -1,9 +1,9 @@
-package edu.forty.bits.functional;
+package edu.forty.bits.findings;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Q49460751 {
+public class Q49460751_MavenJavaDocPlugin {
 
     public static void main(String[] args) {
         someMethod(Stream.of(1, 2, 3), null, null);

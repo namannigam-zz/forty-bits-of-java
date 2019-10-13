@@ -1,6 +1,6 @@
-package edu.forty.bits.jdk09.challenges;
+package edu.forty.bits.challenges;
 
-public class Challenge5 {
+public class PostAndPreIncrementOperators {
 
     public static void main(String[] args) {
         int num1 = 7;
