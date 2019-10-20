@@ -12,7 +12,7 @@ public class TraditionalRawStrings {
                 "</html>\n";
 
         // After JEP-326
-//        String htmlnow = `<html>
+//        String htmlnow = ```<html>
 //                   <body>
 //                       <p>Hello World.</p>
 //                   </body>

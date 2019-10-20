@@ -11,12 +11,15 @@ module forty.bits.of.java {
 
     requires lombok;
 
+
+    exports edu.forty.bits.functional;
+    exports edu.forty.bits.process to jdk.internal.ed;
 //    requires org.apache.commons.lang3;
 //    requires com.fasterxml.jackson.core;
 //    requires com.fasterxml.jackson.databind;
 //    requires com.google.common;
 //    requires com.google.guice;
 //    requires jsr305;
-    requires mongo.java.driver;
 //    requires json.simple;
+    requires mongo.java.driver;
 }

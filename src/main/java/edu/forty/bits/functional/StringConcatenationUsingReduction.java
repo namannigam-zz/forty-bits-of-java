@@ -7,7 +7,7 @@ public class StringConcatenationUsingReduction {
 
     /**
      * Perhaps surprisingly, need not be commutative, though many operators commonly used for reduction,
-     * such as as plus and max, are. An example of a binary operator that’s associative but not commutative
+     * such as as plus and max, are. An example of a binary operator that's associative but not commutative
      * is string concatenation.
      */
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class StringConcatenationUsingReduction {
 
 
         /*
-         * If the provided binary operator isn’t associative, or the provided identity value isn’t actually an identity
+         * If the provided binary operator isn't associative, or the provided identity value isn't actually an identity
          * for the binary operator, then when the operation is executed in parallel,
          * the result might be incorrect, and different executions on the same data set might produce different results.
          */
@@ -39,5 +39,13 @@ public class StringConcatenationUsingReduction {
          * Analogous operation for reduction in parallel
          */
         System.out.println(strings.stream().parallel().collect(Collectors.joining(" ")));
+
+        List<String> identityCheck = List.of("An", "example", "of", "a", "identity", "element");
+        System.out.println(identityCheck.stream().reduce(" ", String::concat));
+        System.out.println(identityCheck.stream().parallel().reduce(" ", String::concat));
+
+//        List<String> strings = List.of("An", "example", "of", "a", "binary", "operator");
+        System.out.println(strings.stream().reduce("", (s, str) -> String.valueOf(s.equals(str))));
+        System.out.println(strings.stream().parallel().reduce("", (s, str) -> String.valueOf(s.equals(str))));
     }
 }

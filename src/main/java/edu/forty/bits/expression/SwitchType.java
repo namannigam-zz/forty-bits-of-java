@@ -1,3 +1,4 @@
+
 package edu.forty.bits.expression;
 
 public class SwitchType {

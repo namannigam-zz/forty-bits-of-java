@@ -3,7 +3,7 @@ package edu.forty.bits.functional;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class SampleStream {
+public class FileHandlingSampleWithStream {
 
     public static void main(String[] args) {
         IntStream.range(0, 5).forEach(i -> createFile("", "test.txt"));

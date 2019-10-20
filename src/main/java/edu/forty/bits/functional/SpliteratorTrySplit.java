@@ -25,7 +25,7 @@ public class SpliteratorTrySplit {
      * The easiest way to make a spliterator, but which results in the worst-quality result,
      * is to pass an Iterator to Spliterators.spliteratorUnknownSize().
      * You can obtain a slightly better spliterator by passing an Iterator and a size to Spliterators.spliterator.
-     * But if stream performance is important — especially, parallel performance —
+     * But if stream performance is important - especially, parallel performance -
      * implement the full Spliterator interface, including all applicable characteristics.
      */
 }
