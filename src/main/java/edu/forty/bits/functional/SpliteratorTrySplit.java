@@ -2,7 +2,6 @@ package edu.forty.bits.functional;
 
 import java.util.Set;
 import java.util.TreeSet;
-import java.util.stream.Collectors;
 
 public class SpliteratorTrySplit {
 

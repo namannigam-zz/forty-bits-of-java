@@ -1,8 +1,10 @@
 package edu.forty.bits.clazz;
 
 import java.lang.reflect.Field;
+import java.util.Arrays;
+import java.util.List;
 
-public class JEP181 {
+public class NestMatesClasses {
 
     public static class Nest1 {
 
@@ -29,7 +31,12 @@ public class JEP181 {
         private int varNest2;
     }
 
-    public static void main(String[] args) throws Exception {
-        new Nest1().f();
+    public static void main(String[] args) {
+        System.out.println(Entity.class.isNestmateOf(Entity.class));
+        System.out.println(Entity.class.isNestmateOf(Entity.InnerEntity.class));
+        System.out.println(Entity.class.isNestmateOf(Entity.AnotherInnerEntity.class));
+        System.out.println(Entity.InnerEntity.class.isNestmateOf(Entity.AnotherInnerEntity.class));
+        System.out.println(List.class.getNestHost());
+        System.out.println(Arrays.class.getNestHost());
     }
 }

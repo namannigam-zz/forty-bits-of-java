@@ -1,4 +1,4 @@
-package edu.forty.bits.collection;
+package edu.forty.bits.collections;
 
 import java.util.Arrays;
 import java.util.List;

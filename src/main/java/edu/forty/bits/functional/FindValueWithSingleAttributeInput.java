@@ -1,6 +1,7 @@
 package edu.forty.bits.functional;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class FindValueWithSingleAttributeInput {
 

@@ -1,6 +1,5 @@
 package edu.forty.bits.functional;
 
-import edu.forty.bits.__Trial__;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

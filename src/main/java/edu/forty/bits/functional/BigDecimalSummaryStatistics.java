@@ -3,7 +3,7 @@ package edu.forty.bits.functional;
 
 import java.math.BigDecimal;
 import java.math.MathContext;
-import java.util.*;
+import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.stream.Collector;
 

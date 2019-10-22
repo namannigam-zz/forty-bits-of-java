@@ -6,7 +6,6 @@ import java.util.stream.Stream;
 public class CollectionUtility {
 
     public static void main(String[] args) {
-
         // interesting generics
         SortedSet<int[]> all = new TreeSet<>((a, b) -> {
             if (a[0] == b[0]) {
