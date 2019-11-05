@@ -21,12 +21,7 @@ public class PartitionUsesListInsteadOfSet {
                 Collectors.toMap(Person::getName, Person::getName, (a, b) -> a, LinkedHashMap::new);
         Map<Boolean, LinkedHashMap<String, String>> mapped = persons.stream()
                 .collect(Collectors.partitioningBy(p -> p.getName().startsWith("P"), downstream));
-
         System.out.println(mapped);
-
-        Map<String, Integer> map = Map.of("", 1, "a", 2);
-        Set<String> foo = Set.of("", "1");
-        boolean contains = foo.stream().anyMatch(map::containsKey);
     }
 
     private static final class Partition<T>
@@ -48,6 +43,8 @@ public class PartitionUsesListInsteadOfSet {
                     Map.Entry<Boolean, T> falseEntry = new SimpleImmutableEntry<>(false, forFalse);
                     Map.Entry<Boolean, T> trueEntry = new SimpleImmutableEntry<>(true, forTrue);
 //                    return Set.of(falseEntry, trueEntry).iterator();
+                    // not documented though, this brings a slightly improved performance for
+                    // creation of collection instead of Set.of which checks for unique contents as well
                     return List.of(falseEntry, trueEntry).iterator();
                 }
 
