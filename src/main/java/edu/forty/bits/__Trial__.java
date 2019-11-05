@@ -16,5 +16,7 @@ import java.util.stream.*;
 
 public class __Trial__ {
 
-
+    public static void main(String[] args) {
+        Arrays.stream(args).collect(Collectors.toList());
+    }
 }
