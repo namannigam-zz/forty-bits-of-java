@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class StremMApAndReduce {
+public class StreamMapAndReduce {
 
     public static DummyObject main(String[] args) {
         List<Dummy> dummy =new ArrayList<>();
-        List<NewDummy> newDummyList = dummy.stream().map(StremMApAndReduce::convertDummyToNewDummy).collect(Collectors.toList());
+        List<NewDummy> newDummyList = dummy.stream().map(StreamMapAndReduce::convertDummyToNewDummy).collect(Collectors.toList());
 
         if(true) {
             BigDecimal amount1 = BigDecimal.ZERO;
