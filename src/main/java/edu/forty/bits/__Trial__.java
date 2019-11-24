@@ -1,6 +1,10 @@
 package edu.forty.bits;
 
-import lombok.*;
+import edu.forty.bits.lvti.Int;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+
 import java.io.*;
 import java.math.*;
 import java.net.http.*;
@@ -20,9 +24,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.*;
 
+import static java.util.Map.entry;
 
 public class __Trial__ {
-    public static void main(String[] args) {
 
-    }
+
 }
