@@ -1,7 +1,5 @@
 package edu.forty.bits.functional;
 
-import edu.forty.bits.__Trial__;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.IntPredicate;
