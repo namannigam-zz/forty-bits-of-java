@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class SwitchExpressionMustComplete {
 
     public static void main(String[] args) {
-//        Furthermore, a switch expression must complete normally with a value, or throw an exception.
+        // Furthermore, a switch expression must complete normally with a value, or throw an exception.
         Scanner scanner = new Scanner(System.in);
         Day day = Day.valueOf(scanner.next());
 

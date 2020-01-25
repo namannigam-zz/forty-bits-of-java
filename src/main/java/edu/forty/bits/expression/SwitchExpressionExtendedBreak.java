@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class SwitchExpressionExtendedBreak {
 
 
+    /*
+     * After JEP-325
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Day day = Day.valueOf(scanner.next());
-        /*
-         * After JEP-325
-         */
         int j = switch (day) {
             case MONDAY -> 0;
             case TUESDAY -> 1;

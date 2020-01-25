@@ -1,10 +1,13 @@
 
 package edu.forty.bits.expression;
 
-public class SwitchType {
+import java.util.Scanner;
+
+public class SwitchExpressionAndLocalVariableType {
 
     public static void main(String[] args) {
-        var y = switch (0) {
+        int value = new Scanner(System.in).nextInt();
+        var y = switch (value) {
             case 0 -> '0';
             case 1 -> 0.0F;
             case 2 -> 2L;
@@ -12,6 +15,6 @@ public class SwitchType {
             default -> 4;
         };
         System.out.println(y);
-        System.out.println(((Object) y).getClass().getName());
+        System.out.println(y.getClass().getName());
     }
 }

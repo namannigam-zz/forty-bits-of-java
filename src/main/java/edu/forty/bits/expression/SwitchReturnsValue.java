@@ -32,15 +32,18 @@ public class SwitchReturnsValue {
                 throw new IllegalStateException("Wat: " + day);
         }
 
+        System.out.println(numLetters);
 
         /*
          * After JEP-325
          */
-        int numLetter = switch (day) {
+        numLetters = switch (day) {
             case MONDAY, FRIDAY, SUNDAY -> 6;
-            case TUESDAY                -> 7;
-            case THURSDAY, SATURDAY     -> 8;
-            case WEDNESDAY              -> 9;
+            case TUESDAY -> 7;
+            case THURSDAY, SATURDAY -> 8;
+            case WEDNESDAY -> 9;
         };
+
+        System.out.println(numLetters);
     }
 }

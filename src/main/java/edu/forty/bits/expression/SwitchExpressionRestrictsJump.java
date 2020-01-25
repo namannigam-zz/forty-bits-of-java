@@ -17,8 +17,8 @@ public class SwitchExpressionRestrictsJump {
                     yield 2;
                 default:
 //                     continue;
+//              ERROR! Illegal jump through a switch
                     yield 0;
-                    // ERROR! Illegal jump through a switch com.stackoverflow.nullpointer.expression
             };
         }
     }
