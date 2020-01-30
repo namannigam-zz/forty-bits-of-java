@@ -18,7 +18,8 @@ public class __Trial__ {
     }
 
     public static void main(String[] args) {
-        NPE npe = new NPE(2, null);
-        System.out.println(npe.reason.detail.equalsIgnoreCase("fix"));
+//        JEP-358
+//        NPE npe = new NPE(2, null);
+//        System.out.println(npe.reason.detail.equalsIgnoreCase("fix"));
     }
 }
