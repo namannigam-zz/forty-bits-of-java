@@ -1,4 +1,4 @@
-package edu.forty.bits.reflection;
+package edu.forty.bits.reflect;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

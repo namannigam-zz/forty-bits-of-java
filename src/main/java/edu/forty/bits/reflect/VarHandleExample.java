@@ -1,4 +1,4 @@
-package edu.forty.bits.reflection;
+package edu.forty.bits.reflect;
 
 import java.lang.invoke.MethodHandles;
 import java.lang.invoke.VarHandle;
