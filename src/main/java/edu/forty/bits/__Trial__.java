@@ -1,13 +1,16 @@
 package edu.forty.bits;
 
-import edu.forty.bits.records.Singleton;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Stream;
 
 public class __Trial__ {
 
@@ -23,14 +26,13 @@ public class __Trial__ {
         String detail;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        JEP-358
 //        NPE npe = new NPE(2, null);
 //        System.out.println(npe.reason.detail.equalsIgnoreCase("fix"));
         solve();
     }
 
-    static void solve() {
+    static void solve() throws IOException {
     }
-
 }
