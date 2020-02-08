@@ -3,14 +3,11 @@ package edu.forty.bits;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.Set;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class __Trial__ {
 
@@ -33,6 +30,6 @@ public class __Trial__ {
         solve();
     }
 
-    static void solve() throws IOException {
+    static void solve() {
     }
 }

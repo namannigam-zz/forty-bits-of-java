@@ -11,6 +11,7 @@ module forty.bits.of.java {
 
     requires lombok;
 
+    requires jol.core;
 
     exports edu.forty.bits.functional;
     exports edu.forty.bits.process to jdk.internal.ed;
