@@ -2,11 +2,12 @@ package edu.forty.bits;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Set;
-import java.util.function.Predicate;
+import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class __Trial__ {
