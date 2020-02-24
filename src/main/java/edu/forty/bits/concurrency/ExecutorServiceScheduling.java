@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ExecutorServiceScheduling {
 
     public static void main(String[] args) {
-        ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(2);
+        ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(5);
         scheduledExecutorService.scheduleAtFixedRate(keepReading(), 1, 5, TimeUnit.SECONDS);
         scheduledExecutorService.scheduleAtFixedRate(keepWriting(), 1, 5, TimeUnit.SECONDS);
         new BeeperControl().beepForAnHour();
@@ -16,10 +16,9 @@ public class ExecutorServiceScheduling {
 
     private static Runnable keepReading() {
         return () -> {
-            ;
             Thread thread = Thread.currentThread();
             System.out.println("Hi! Printer here." + " :: " +
-                    thread.getName() + " == " + thread.getId() + " :: "+
+                    thread.getName() + " == " + thread.getId() + " :: " +
                     System.currentTimeMillis());
         };
     }
@@ -28,14 +27,14 @@ public class ExecutorServiceScheduling {
         return () -> {
             Thread thread = Thread.currentThread();
             System.out.println("Hi! Writer here." + " :: " +
-                    thread.getName() + " == " + thread.getId() + " :: "+
-                    System.currentTimeMillis());        };
+                    thread.getName() + " == " + thread.getId() + " :: " +
+                    System.currentTimeMillis());
+        };
     }
 
     // to beep every ten seconds for two minutes
     static class BeeperControl {
-        private final ScheduledExecutorService scheduler =
-                Executors.newScheduledThreadPool(1);
+        private final ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 
         public void beepForAnHour() {
             Runnable beeper = () -> System.out.println("beep");
