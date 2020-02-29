@@ -2,13 +2,8 @@ package edu.forty.bits;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.ToString;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class __Trial__ {
 
@@ -32,5 +27,6 @@ public class __Trial__ {
     }
 
     static void solve() {
+
     }
 }
