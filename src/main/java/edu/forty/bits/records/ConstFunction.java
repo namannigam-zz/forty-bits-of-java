@@ -5,7 +5,7 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-public record ConstFunction<T,R>(T t, R r)  implements Function<T,R> {
+public record ConstFunction<T, R>(T t, R r) implements Function<T, R> {
     @Override
     public R apply(T t) {
         return null;
@@ -19,7 +19,7 @@ public record ConstFunction<T,R>(T t, R r)  implements Function<T,R> {
     }
 
     // what it is not meant for
-    public record Executor<T>(Supplier<T>supply,Consumer<T>accept) {
+    public record Executor<T>(Supplier<T>supply, Consumer<T>accept) {
     }
 
     // static fields are allowed
