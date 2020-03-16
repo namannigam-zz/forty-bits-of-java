@@ -47,8 +47,7 @@ public class CollectionUtility {
     }
 
 
-    public static boolean collectionIsNullOREmpty(Stream<Collection> collectionStream) {
+    public static boolean collectionIsNullOrEmpty(Stream<Collection> collectionStream) {
         return collectionStream.anyMatch(item -> item == null || item.isEmpty());
-
     }
 }

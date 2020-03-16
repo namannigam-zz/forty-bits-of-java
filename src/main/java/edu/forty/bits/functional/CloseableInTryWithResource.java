@@ -1,4 +1,4 @@
-package edu.forty.bits.challenges;
+package edu.forty.bits.functional;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -9,7 +9,6 @@ public class CloseableInTryWithResource {
         String soprano = null;
 
         CloseIt closeIt = new CloseIt();
-
         try(closeIt) {
             System.out.println(soprano.matches(null));
         } catch (Exception e) {

@@ -1,4 +1,4 @@
-package edu.forty.bits.challenges;
+package edu.forty.bits.functional;
 
 public class PostAndPreIncrementOperators {
 

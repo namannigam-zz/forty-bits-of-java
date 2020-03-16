@@ -1,9 +1,9 @@
-package edu.forty.bits.challenges;
+package edu.forty.bits.functional;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-public class Challenge10 {
+public class AnnotationParsingUsingReflection {
 
     public static void main(String[] args) throws NoSuchFieldException {
         System.out.println(Jedi.class.getAnnotation(Table.class).name());
@@ -14,7 +14,7 @@ public class Challenge10 {
     @Table(name = "jedi")
     static class Jedi {
         @Column(name="attack_type")
-        String attackType;
+        public String attackType; // not accessible unless public
 
         public String getAttackType() {
             return attackType;
