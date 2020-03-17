@@ -26,6 +26,6 @@ public class __Trial__ {
         solve();
     }
 
-    static void solve() {
+    private static void solve() {
     }
 }
