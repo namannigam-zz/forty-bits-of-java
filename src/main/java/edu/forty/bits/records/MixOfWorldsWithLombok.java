@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 public class MixOfWorldsWithLombok {
 
     public static void main(String[] args) {
-//        System.out.println(new Java("14").version());
+        System.out.println(new Java("14", true).version());
     }
 
     @AllArgsConstructor
