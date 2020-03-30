@@ -3,8 +3,6 @@ package edu.forty.bits;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.io.IOException;
-
 public class __Trial__ {
 
     @Getter
@@ -19,7 +17,7 @@ public class __Trial__ {
         String detail;
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 //        JEP-358
 //        NPE npe = new NPE(2, null);
 //        System.out.println(npe.reason.detail.equalsIgnoreCase("fix"));
