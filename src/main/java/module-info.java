@@ -22,5 +22,6 @@ module forty.bits.of.java {
 //    requires com.google.guice;
 //    requires jsr305;
 //    requires json.simple;
-    requires mongo.java.driver;
+//    requires org.json;
+//    requires mongo.java.driver;
 }
