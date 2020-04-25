@@ -71,8 +71,7 @@ public class CustomCollector<T,A,R> implements Collector<T,A,R> {
         return i -> (R) i;
     }
 
-    public static <T>
-    Collector<T, ?, Set<T>> toSet() {
+    public static <T> Collector<T, ?, Set<T>> toSet() {
         return new CustomCollector<>((Supplier<Set<T>>) HashSet::new, Set::add,
                 (left, right) -> {
                     left.addAll(right);

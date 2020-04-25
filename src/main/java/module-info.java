@@ -24,4 +24,5 @@ module forty.bits.of.java {
 //    requires json.simple;
 //    requires org.json;
 //    requires mongo.java.driver;
+//    requires spring.web;
 }
