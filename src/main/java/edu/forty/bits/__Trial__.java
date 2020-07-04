@@ -1,7 +1,9 @@
 package edu.forty.bits;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.*;
+import java.util.*;
+import java.util.function.*;
+import java.util.stream.*;
 
 public class __Trial__ {
 
