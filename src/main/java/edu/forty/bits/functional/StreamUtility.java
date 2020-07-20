@@ -225,7 +225,7 @@ public class StreamUtility {
                 .orElse(edu.forty.bits.Objects.Student.Country.POLAND);
     }
 
-    private static Map.Entry<Integer,Long> maxEntryFromAListBasedOnCount(List<Integer> list) {
+    private static Map.Entry<Integer, Long> maxEntryFromAListBasedOnCount(List<Integer> list) {
         return list.stream()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
                 .entrySet().stream()
@@ -379,8 +379,7 @@ public class StreamUtility {
     }
 
     /**
-     * @apiNote
-     * The {@code filtering()} collectors are most useful when used in a
+     * @apiNote The {@code filtering()} collectors are most useful when used in a
      * multi-level reduction, such as downstream of a {@code groupingBy} or
      * {@code partitioningBy}.  For example, given a stream of
      * {@code Employee}, to accumulate the employees in each department that have a
@@ -400,8 +399,7 @@ public class StreamUtility {
 
 
     /**
-     * @apiNote
-     * The {@code flatMapping()} collectors are most useful when used in a
+     * @apiNote The {@code flatMapping()} collectors are most useful when used in a
      * multi-level reduction, such as downstream of a {@code groupingBy} or
      * {@code partitioningBy}.  For example, given a stream of
      * {@code Order}, to accumulate the set of line items for each customer:
@@ -462,6 +460,23 @@ public class StreamUtility {
     }
 
 
+    private static List<String> cartesianProduct() {
+        List<String> names = Arrays.asList("Superman", "Batman", "Wonder Woman");
+        List<String> likes = Arrays.asList("good1", "good2", "good3");
+        List<String> dislikes = Arrays.asList("bad1", "bad2", "bad3");
+
+        Stream<Supplier<Stream<String>>> streamOfSuppliers = List.of(names, likes, dislikes)
+                .stream()
+                .map(list -> list::stream);
+        Supplier<Stream<String>> supplierOfStream = streamOfSuppliers
+                .reduce(() -> Stream.of(""),
+                        (s1, s2) -> () -> s1.get()
+                                .flatMap(a -> s2.get().map(b -> a + b)));
+        List<String> statements = supplierOfStream.get().collect(toList());
+
+        System.out.println(statements);
+        return statements;
+    }
 
     @Getter
     public class PriceGroup {
