@@ -478,6 +478,22 @@ public class StreamUtility {
         return statements;
     }
 
+    // https://stackoverflow.com/questions/63106815
+    private static List<List<String>> getTopN(int n, List<String> values) {
+        Map<String, Long> valueCountMap = values.stream()
+                .collect(Collectors.groupingBy(x -> x, Collectors.counting()));
+
+        TreeMap<Long, List<String>> rankedEntries = valueCountMap.entrySet().stream()
+                .collect(Collectors.groupingBy(Map.Entry::getValue,
+                        TreeMap::new, Collectors.mapping(Map.Entry::getKey,
+                                Collectors.toList())));
+
+        return rankedEntries.descendingMap().entrySet().stream()
+                .limit(n)
+                .map(Map.Entry::getValue)
+                .collect(Collectors.toList());
+    }
+
     @Getter
     public class PriceGroup {
         String priceName;
