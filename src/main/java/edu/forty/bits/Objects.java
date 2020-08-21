@@ -103,24 +103,9 @@ public class Objects {
     }
 
     @Getter
-    public static class Permission {
-        String label;
-    }
-
-    @Getter
     public static class ProductCatalogue {
         private Integer pId;
         private Integer cId;
-    }
-
-    @Getter
-    public static class Rider {
-        private long rideTime;
-        private Type type;
-
-        public enum Type {
-            EXPERIENCED;
-        }
     }
 
     @Getter
@@ -191,16 +176,5 @@ public class Objects {
             this.email = email;
             this.lists = lists;
         }
-
-        public User(String name, String id, int age) {
-            this.name = name;
-            this.id = id;
-            this.age = age;
-        }
-    }
-
-    @Getter
-    public static class Unicorn {
-        private List<Rider> riders;
     }
 }
