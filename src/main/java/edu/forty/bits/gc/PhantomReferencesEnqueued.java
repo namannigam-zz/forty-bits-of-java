@@ -6,7 +6,7 @@ import java.lang.ref.ReferenceQueue;
 
 public class PhantomReferencesEnqueued {
 
-    public static void main(String[] args) throws IllegalArgumentException, InterruptedException {
+    public static void main(String[] args) throws IllegalArgumentException {
         ReferenceQueue<Object> queue = new ReferenceQueue<Object>();
         Reference<Object> reference = newReference(newHugeObject(), queue);
         Object huge = newHugeObject();

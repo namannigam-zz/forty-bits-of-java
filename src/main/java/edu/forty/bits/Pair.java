@@ -1,15 +1,11 @@
 package edu.forty.bits;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
-@Getter
-@AllArgsConstructor
-public  class Pair<T> {
-    private T first;
-    private T second;
-
-    public static <T> Pair<T> of(T first, T second) {
+public record Pair<L, R>(L first, R second) {
+    public static <L, R> Pair<L, R> of(L first, R second) {
         return new Pair<>(first, second);
+    }
+
+    public static void main(String[] args) {
+        Pair<Integer, String> pair = Pair.of(1, "one");
     }
 }

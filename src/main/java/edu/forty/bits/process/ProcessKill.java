@@ -6,9 +6,6 @@ import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-/**
- * Created by naman.nigam on 23/03/17.
- */
 public class ProcessKill {
 
     public static void main(String[] args) {

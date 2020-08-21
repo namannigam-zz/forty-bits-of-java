@@ -23,8 +23,5 @@ public class LayoutHashMap {
         System.out.println(GraphLayout.parseInstance(list2).toFootprint());
         System.out.println(GraphLayout.parseInstance(list3).toFootprint());
         System.out.println(GraphLayout.parseInstance(list4).toFootprint());
-
-
-
     }
 }
