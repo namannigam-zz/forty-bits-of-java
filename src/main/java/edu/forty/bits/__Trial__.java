@@ -28,9 +28,5 @@ public class __Trial__ {
     }
 
     private static void solve() {
-        Collection<String> c = List.of("1", "2", "3", "4", "5");
-        String result = c.stream().collect(() -> "",
-                (s, str) -> s.concat(str), (s1, str1) -> s1.concat(str1));
-        System.out.print(result);
     }
 }
