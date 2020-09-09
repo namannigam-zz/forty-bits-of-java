@@ -8,8 +8,11 @@ package edu.forty.bits.features.records;
  * The record, and the individual components in a state description, may be annotated.
  * If a record is nested, then it is implicitly static; this avoids an immediately enclosing instance
  * which would silently add state to the record.
+ *
+ * @param name     first name of the person
+ * @param lastName last name of the person
  */
-public record Person(String name,String lastName) {
+public record Person(String name, String lastName) {
     static char gender; // can be assigned value anytime and statically keeps it further
 
     void print() {

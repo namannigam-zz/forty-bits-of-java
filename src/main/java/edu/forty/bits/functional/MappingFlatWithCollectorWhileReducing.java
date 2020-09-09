@@ -63,7 +63,9 @@ public class MappingFlatWithCollectorWhileReducing {
         return Collector.of(downstream.supplier(),
                 (a, t) -> {
                     try (Stream<? extends U> s = mapper.apply(t)) {
-                        if (s != null) s.forEachOrdered(u -> acc.accept(a, u));
+                        if (s != null) {
+                            s.forEachOrdered(u -> acc.accept(a, u));
+                        }
                     }
                 },
                 downstream.combiner(), downstream.finisher(),
