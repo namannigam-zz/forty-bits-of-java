@@ -10,6 +10,7 @@ module forty.bits.of.java {
     requires jdk.jlink;
 
     requires lombok;
+    requires com.google.common;
 
     exports edu.forty.bits.functional;
     exports edu.forty.bits.process to jdk.internal.ed;

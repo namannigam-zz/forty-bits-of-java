@@ -30,16 +30,26 @@
         <!--            <artifactId>commons-lang3</artifactId>-->
         <!--            <version>3.10</version>-->
         <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.google.guava</groupId>-->
-        <!--            <artifactId>guava</artifactId>-->
-        <!--            <version>29.0-jre</version>-->
-        <!--        </dependency>-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.mongodb</groupId>-->
+<!--            <artifactId>mongodb-driver</artifactId>-->
+<!--            <version>3.12.7</version>-->
+<!--        </dependency>-->
         <!--        <dependency>-->
         <!--            <groupId>com.fasterxml.jackson.core</groupId>-->
         <!--            <artifactId>jackson-databind</artifactId>-->
         <!--            <version>2.10.3</version>-->
         <!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.immutables</groupId>-->
+<!--            <artifactId>criteria-inmemory</artifactId>-->
+<!--            <version>2.8.2</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
