@@ -1,4 +1,4 @@
-package edu.forty.bits.sealed;
+package edu.forty.bits.features.sealed;
 
 public class SealedExperiment {
 
